@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="sr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>T02 Подсетник за ученике</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#EEF1F6;color:#1B1F27;line-height:1.45;font-size:16px}
+.wrap{max-width:640px;margin:0 auto;padding:14px}
+header{background:#1F2A44;color:#fff;border-radius:14px;padding:18px 16px;margin-bottom:12px}
+header h1{margin:0 0 4px;font-size:22px}header p{margin:0;font-size:13px;opacity:.85}
+section{background:#fff;border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+h2{margin:0 0 10px;font-size:18px;color:#2B5C8A}
+p{margin:8px 0}ul{margin:8px 0;padding-left:20px}li{margin:5px 0}
+.note{font-size:13px;color:#5A6478;font-style:italic}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.card{background:#EEF1F6;color:#1F2A44;border-radius:10px;padding:10px 6px;text-align:center}
+.card.d{background:#2B5C8A;color:#fff}
+.card b{display:block;font-size:26px}.card span{font-size:12.5px}
+.bar{display:flex;gap:3px;margin:6px 0}
+.seg{display:flex;align-items:center;justify-content:center;text-align:center;border-radius:8px;padding:6px 4px;font-weight:700;font-size:13.5px}
+.lbl{font-size:13px;font-weight:700;color:#1F2A44;margin-top:10px}
+.row{display:flex;gap:8px;align-items:center;border-radius:8px;padding:9px 10px;margin:4px 0;font-size:14px}
+.row .tm{font-weight:700;min-width:46px}.row .du{font-weight:700;min-width:70px}.row .tx{flex:1}
+.sum{background:#EEF1F6;border-radius:10px;padding:10px;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}th{background:#1F2A44;color:#fff;text-align:left;padding:8px}td{padding:8px;border:1px solid #C9CFDA}
+.rule{border:2px solid #B03A2E;color:#B03A2E;border-radius:10px;padding:9px;font-weight:700;margin:10px 0}
+.ch{flex:1 1 0;min-width:0}
+footer{font-size:12px;color:#5A6478;text-align:center;padding:6px 0 18px}
+.bad{outline:3px solid #B03A2E;outline-offset:-3px;background:#fff!important;color:#B03A2E!important}
+</style></head><body><div class="wrap">
+<header><h1>Подсетник за ученике</h1><p>Радно време, време управљања, паузе и одмори · Управљање моторним возилима · T02.03 и T02.04</p></header>
+
+<section><h2>1. Радно време и радни дан</h2>
+<p><b>Радно време</b> = време управљања + остало радно време.</p>
+<ul><li><b>Остало радно време:</b> утовар, истовар, преглед возила, папири и чекање чије трајање унапред није познато.</li>
+<li><b>Расположивост:</b> чекање чије је трајање унапред познато (нпр. чекање на граници). Не улази у радно време.</li>
+<li><b>Паузе и одмори</b> не улазе у радно време.</li></ul>
+<div class="lbl">Пример радног дана (06:00–18:45)</div><div class="row" style="background:#5B7DB1;color:#fff"><span class="tm">06:00</span><span class="du">1 h</span><span class="tx">остало радно време (папири, преглед)</span></div><div class="row" style="background:#2B5C8A;color:#fff"><span class="tm">07:00</span><span class="du">4 h 30 min</span><span class="tx">управљање</span></div><div class="row" style="background:#E8A317;color:#1F2A44"><span class="tm">11:30</span><span class="du">45 min</span><span class="tx">пауза</span></div><div class="row" style="background:#5B7DB1;color:#fff"><span class="tm">12:15</span><span class="du">1 h</span><span class="tx">истовар (остало радно време)</span></div><div class="row" style="background:#8A95A8;color:#fff"><span class="tm">13:15</span><span class="du">1 h</span><span class="tx">расположивост (познато трајање)</span></div><div class="row" style="background:#2B5C8A;color:#fff"><span class="tm">14:15</span><span class="du">4 h 30 min</span><span class="tx">управљање</span></div><div class="row" style="background:#2E8B57;color:#fff"><span class="tm">18:45</span><span class="du"></span><span class="tx">дневни одмор</span></div>
+<p class="sum">Радно време = 1 h + 4 h 30 min + 1 h + 4 h 30 min = <b>11 h</b>. Време управљања = <b>9 h</b>. Радни дан = <b>12 h 45 min</b>.</p>
+<p><b>Радни дан</b> је шири појам: радно време заједно са паузама и расположивошћу у току дана. Закон га не дефинише посебно.</p>
+<div class="lbl">Границе радног времена</div>
+<div class="cards"><div class="card "><b>14 h</b><span>у 24 h</span></div><div class="card "><b>60 h</b><span>у једној недељи</span></div><div class="card "><b>48 h</b><span>недељно, просек за 4 месеца</span></div><div class="card "><b>10 h</b><span>у 24 h, ако има ноћног рада</span></div></div>
+<p class="note">Ноћно време је од 00:00 до 04:00. Недеља почиње у понедељак у 00:00 и завршава се у недељу у 24:00.</p></section>
+
+<section><h2>2. Време управљања</h2>
+<div class="cards"><div class="card d"><b>9 h</b><span>дневно</span></div><div class="card d"><b>10 h</b><span>највише 2 пута недељно</span></div><div class="card d"><b>56 h</b><span>недељно</span></div><div class="card d"><b>90 h</b><span>у две узастопне недеље</span></div></div>
+<p class="note">Градски и приградски линијски превоз и међумесни линијски превоз до 50 km у Србији: највише 8 h дневно.</p>
+<div class="lbl">1. недеља</div><div class="bar"><div class="seg" style="flex:56;background:#2B5C8A;color:#fff;min-height:44px">управљање 56 h (највише)</div></div>
+<div class="lbl">2. недеља</div><div class="bar"><div class="seg" style="flex:34;background:#5B7DB1;color:#fff;min-height:44px">34 h</div><div class="seg" style="flex:22;background:#D9DEE7;color:#1F2A44;min-height:44px">не сме</div></div>
+<p class="note">Ако у првој недељи возиш 56 h, у другој смеш још само 34 h, јер је 56 h + 34 h = 90 h.</p></section>
+
+<section><h2>3. Паузе</h2>
+<div class="lbl">А</div><div class="bar"><div class="seg" style="flex:54;background:#2B5C8A;color:#fff;min-height:44px">управљање 4 h 30 min</div><div class="seg" style="flex:15;background:#E8A317;color:#1F2A44;min-height:44px">пауза 45 min</div></div>
+<div class="lbl">Б</div><div class="bar"><div class="seg" style="flex:26;background:#2B5C8A;color:#fff;min-height:44px">управљање</div><div class="seg" style="flex:7;background:#E8A317;color:#1F2A44;min-height:44px">15 min</div><div class="seg" style="flex:20;background:#2B5C8A;color:#fff;min-height:44px">управљање</div><div class="seg" style="flex:10;background:#E8A317;color:#1F2A44;min-height:44px">30 min</div></div>
+<p class="note">Збир управљања ≤ 4 h 30 min.</p>
+<ul><li>Најкасније после 4 h 30 min управљања следи пауза од најмање 45 min.</li>
+<li>Може да се подели: прво најмање 15 min, па најмање 30 min. Подела 20 min + 25 min није дозвољена.</li>
+<li>Пауза је само за одмор, без утовара, папира и другог посла.</li></ul></section>
+
+<section><h2>4. Одмор у току дневног рада</h2>
+<table><tr><th>Радно време у дану</th><th>Најкраћи одмор</th></tr><tr><td>више од 6 h, а мање од 9 h</td><td>30 min</td></tr><tr><td>више од 9 h, а мање од 12 h</td><td>45 min</td></tr><tr><td>више од 12 h</td><td>60 min</td></tr></table>
+<p class="note">Узима се најкасније после 6 h непрекидног рада, у деловима од најмање 15 min. Не важи за градски и приградски линијски превоз и за међумесни линијски превоз до 50 km у Србији.</p></section>
+
+<section><h2>5. Дневни одмор</h2>
+<div class="lbl">Пун</div><div class="bar"><div class="seg" style="flex:1;background:#2E8B57;color:#fff;min-height:44px">11 h у комаду</div></div>
+<div class="lbl">Подељен</div><div class="bar"><div class="seg" style="flex:3;background:#2E8B57;color:#fff;min-height:44px">≥ 3 h</div><div class="seg" style="flex:2;background:#2B5C8A;color:#fff;min-height:44px">рад</div><div class="seg" style="flex:9;background:#2E8B57;color:#fff;min-height:44px">≥ 9 h</div></div>
+<div class="lbl">Скраћени</div><div class="bar"><div class="seg" style="flex:1;background:#E8A317;color:#1F2A44;min-height:44px">од 9 h до 11 h</div></div>
+<div class="lbl">Пример између два недељна одмора</div><div class="bar"><div class="seg" style="flex:2;background:#1F2A44;color:#fff;min-height:40px">нед.</div><div class="seg" style="flex:1;background:#E8A317;color:#1F2A44;min-height:40px">9 h</div><div class="seg" style="flex:1;background:#2E8B57;color:#fff;min-height:40px">11 h</div><div class="seg" style="flex:1;background:#E8A317;color:#1F2A44;min-height:40px">9 h</div><div class="seg" style="flex:1;background:#E8A317;color:#1F2A44;min-height:40px">9 h</div><div class="seg" style="flex:1;background:#2E8B57;color:#fff;min-height:40px">11 h</div><div class="seg" style="flex:2;background:#1F2A44;color:#fff;min-height:40px">нед.</div></div>
+<ul><li><b>Пун дневни одмор:</b> 11 h у комаду или подељен на 3 h + 9 h.</li>
+<li><b>Скраћени дневни одмор:</b> од 9 h до 11 h, највише 3 пута између два недељна одмора.</li>
+<li>Нови дневни одмор мора да почне у року од 24 h од краја претходног одмора.</li></ul></section>
+
+<section><h2>6. Недељни одмор</h2>
+<div class="lbl">Пун</div><div class="bar"><div class="seg" style="flex:1;background:#1F2A44;color:#fff;min-height:44px">≥ 45 h у комаду</div></div>
+<div class="lbl">Скраћени (пример)</div><div class="bar"><div class="seg" style="flex:32;background:#1F2A44;color:#fff;min-height:44px">32 h</div><div class="seg" style="flex:13;background:#fff;color:#B03A2E;outline:3px solid #B03A2E;outline-offset:-3px;min-height:44px">дуг 13 h</div></div>
+<div class="lbl">Надокнада</div><div class="bar"><div class="seg" style="flex:11;background:#2E8B57;color:#fff;min-height:44px">дневни 11 h</div><div class="seg" style="flex:13;background:#fff;color:#B03A2E;outline:3px solid #B03A2E;outline-offset:-3px;min-height:44px">+ 13 h</div></div>
+<p class="note">11 h + 13 h = 24 h у комаду.</p>
+<ul><li><b>Пун недељни одмор:</b> најмање 45 h у комаду. Скраћени: најмање 24 h.</li>
+<li><b>Скраћени одмор је „позајмица”:</b> разлика до 45 h враћа се до краја треће недеље, у једном комаду, уз неки одмор од најмање 9 h.</li>
+<li>У две узастопне недеље: два пуна недељна одмора или један пун и један скраћени.</li></ul>
+<div class="rule">Правило: највише 6 дана вожње заредом, па недељни одмор.</div>
+<div class="bar"><div class="seg" style="flex:1.4;background:#1F2A44;color:#fff;min-height:40px">нед.</div><div class="seg" style="flex:1;background:#2B5C8A;color:#fff;min-height:40px">1.</div><div class="seg" style="flex:1;background:#2B5C8A;color:#fff;min-height:40px">2.</div><div class="seg" style="flex:1;background:#2B5C8A;color:#fff;min-height:40px">3.</div><div class="seg" style="flex:1;background:#2B5C8A;color:#fff;min-height:40px">4.</div><div class="seg" style="flex:1;background:#2B5C8A;color:#fff;min-height:40px">5.</div><div class="seg" style="flex:1;background:#2B5C8A;color:#fff;min-height:40px">6.</div><div class="seg" style="flex:1.4;background:#1F2A44;color:#fff;min-height:40px">нед.</div></div></section>
+
+<section><h2>7. Планирање превоза</h2>
+<p><b>Време вожње:</b> t = s / v (s у km, v у km/h, t у h)</p>
+<p class="sum"><b>Пример:</b> s = 540 km, v = 60 km/h → t = 540 / 60 = 9 h → 4 h 30 min управљања + пауза 45 min + 4 h 30 min управљања.</p>
+<p><b>Провери пре поласка:</b></p>
+<ul><li>дневно управљање ≤ 9 h (10 h највише 2 пута недељно);</li><li>пауза 45 min после највише 4 h 30 min управљања;</li><li>недељно управљање ≤ 56 h, у две недеље ≤ 90 h;</li><li>радно време ≤ 14 h у 24 h и дневни одмор најмање 9 h, односно 11 h.</li></ul></section>
+<footer>Извор: Закон о радном времену посаде возила у друмском превозу и тахографима, чл. 3–8.</footer>
+</div></body></html>
